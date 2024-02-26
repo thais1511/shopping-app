@@ -15,4 +15,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "ShoppingApp"
 include(":app")
- 
+include(":core-network")
+include(":core-localstorage")
+include(":core-data")
+include(":core-common")
+include(":core-model")
+include(":core-designSystem")
+include(":core-theme")
