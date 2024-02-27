@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("my-android-application")
+    id("my-hilt")
 }
 
 android {
@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "tqthai.demo.shoppingapp"
-        minSdk = 24
+
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -20,22 +20,6 @@ android {
         }
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     buildFeatures {
         compose = true
     }
